@@ -1,0 +1,40 @@
+Author: alex
+Name of Simulation: TestLogatec4
+Notes: no
+--------------------------------------------------------
+DATA: 
+Basic: /
+Mass: 290
+CG in y: 55
+CG in z: 0.1
+Track width: 1.208
+Wheelbase: 1.25
+W: 0.5
+Suspension: /
+Coefficient of Friction: 1.4
+Aerodynamics: /
+Air density: 1.225
+Frontal area: 1.2
+Coefficient of DF: 2.7
+Coefficient of Drag: 1.7
+CoP in y: 60
+CoP in z: 0.1
+Drivetrain: /
+Tire radius: 0.228
+Max Power: 80000
+Max RPM: 7600
+Gear ratio: 5.45
+Max torque: 90
+Braking system: /
+Brake bias: 50
+--------------------------------------------------------
+RESULTS: 
+Total time [s]: 40.061602134422316
+Total energy used [J]: 923359.1466862918
+Total energy used [kWh]: 0.2564886518573033
+Max lateral acceleration [m/s²]: 41.938843422287206
+Max longitudinal acceleration [m/s²]: 12.645244393254623
+Max acceleration [m/s²]: 12.645244393254623
+Max deceleration [m/s²]: -16.744184759958944
+Max velocity [m/s]: 31.16330398895591
+Average velocity [m/s]: 17.980838705367397

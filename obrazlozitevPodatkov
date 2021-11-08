@@ -1,0 +1,19 @@
+Mass = masa voznika + masa vozila v kg
+CG in y = center of gravity glede na razmerje med prednjo iz zadnjo osjo v procentih (npr. 55%)
+CG in z = center of gravity v z smeri v metrih, ki se meri od cetra osi gum
+Track width = razdalja med sredinama gum na isti osi v metrih
+Wheelbase = medosna razdalja v metrih
+W = 0.5 stalen koeficient
+Coefficient of friction = koeficient trenja pnevmatik
+Air density v kg/m3
+Frontal area = projekcija frontalne povšrine formule v m2
+coeficient of df = koeficient potisne sile
+coeficient of drag
+CoP = center of pressure v y smeri (vzdolž vozila) kot razmerje med prednjo in zadnjo osjo
+COPz
+tire radius = polmer v metrih
+max power = moč enega elektromotrja v watih
+max rpm = maksimalni obrati elektromotorja
+gear ratio = prestavno razmerje
+max torque = maksimalen navor elektromotorja
+brake bias
