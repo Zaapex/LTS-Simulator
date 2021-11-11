@@ -17,4 +17,4 @@ https://note.nkmk.me/en/python-pip-install-requirements/
 
 <h3>Primer</h3>
 
-![Primer](/home/alex/Desktop/LTS-Simulator/Testiranje/Logatec 26.10.2021/primerjava.png)
+![Primer](/home/alex/Desktop/LTS-Simulator/Testiranje/primerjava.png)
