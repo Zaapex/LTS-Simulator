@@ -55,3 +55,6 @@ plt.plot(df2["pot"], df2["vx_max"], label="Old")
 plt.legend()"""
 
 r = 15.25 + track_width/2 + 0.1
+
+Functions.add_new_points("/home/alex/Desktop/LTS-Simulator/Tracks/Logatec2_lesspoints.csv")
+Functions.radius_of_corner("/home/alex/Desktop/LTS-Simulator/Tracks/Logatec2_lesspoints.csv")

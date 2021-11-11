@@ -29,12 +29,12 @@ Braking system: /
 Brake bias: 50
 --------------------------------------------------------
 RESULTS: 
-Total time [s]: 4.576570777061578
-Total energy used [J]: 149492.2734710693
-Total energy used [kWh]: 0.04152563151974147
-Max lateral acceleration [m/s²]: 0.11105360333471881
-Max longitudinal acceleration [m/s²]: 7.582015785445512
-Max acceleration [m/s²]: 7.582015785445512
-Max deceleration [m/s²]: -19.72043637353111
-Max velocity [m/s]: 33.35429436298693
-Average velocity [m/s]: 22.259783925250975
+Total time [s]: 49.370586096136876
+Total energy used [J]: 363728.8805349575
+Total energy used [kWh]: 0.10103580014859931
+Max lateral acceleration [m/s²]: 1493.983081132085
+Max longitudinal acceleration [m/s²]: 7.46354763621437
+Max acceleration [m/s²]: 7.46354763621437
+Max deceleration [m/s²]: -10.467675293798342
+Max velocity [m/s]: 22.712889108719605
+Average velocity [m/s]: 13.886463384836334

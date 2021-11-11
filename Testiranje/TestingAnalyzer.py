@@ -42,7 +42,7 @@ sply = UnivariateSpline(time, y, s=0.0, k=2)
 splx = UnivariateSpline(time, x, s=0.0, k=2)
 x_g = np.linspace(time[0], time[-1], 150)
 
-data2 = pd.read_csv("/home/alex/Desktop/LTS-Simulator/Simulations/csv/Logatec_newnormal")
+data2 = pd.read_csv("/home/alex/Desktop/LTS-Simulator/Simulations/Primer/Primer.csv")
 x2 = data2["x"]
 y2 = data2["y"]
 velocity2 = data2["vx_exit"]

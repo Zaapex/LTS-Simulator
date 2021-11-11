@@ -1,10 +1,10 @@
-Author: alex
-Name of Simulation: TestLogatec5
-Notes: no
+Author: Ales
+Name of Simulation: Primer
+Notes: None
 --------------------------------------------------------
 DATA: 
 Basic: /
-Mass: 290
+Mass: 270
 CG in y: 55
 CG in z: 0.1
 Track width: 1.208
@@ -29,12 +29,12 @@ Braking system: /
 Brake bias: 50
 --------------------------------------------------------
 RESULTS: 
-Total time [s]: 37.72452581596602
-Total energy used [J]: 783465.4628617461
-Total energy used [kWh]: 0.2176292952393739
-Max lateral acceleration [m/s²]: 25.66636264174548
-Max longitudinal acceleration [m/s²]: 12.313069889260712
-Max acceleration [m/s²]: 12.313069889260712
-Max deceleration [m/s²]: -18.1612866894102
-Max velocity [m/s]: 32.0589192484056
-Average velocity [m/s]: 17.496618998891368
+Total time [s]: 44.75857451148795
+Total energy used [J]: 298665.4052655151
+Total energy used [kWh]: 0.08296261257375419
+Max lateral acceleration [m/s²]: 14.348353587589328
+Max longitudinal acceleration [m/s²]: 7.230843553877179
+Max acceleration [m/s²]: 7.230843553877179
+Max deceleration [m/s²]: -11.790976180173816
+Max velocity [m/s]: 24.198860728444576
+Average velocity [m/s]: 14.365220784615213

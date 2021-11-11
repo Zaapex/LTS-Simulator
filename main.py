@@ -6,7 +6,7 @@ author = input("Author (Default: User): ")
 name_of_sim = input("Name of Simulation (Default: Sim): ")
 notes = input("Notes (Default: None): ")
 select_track = input("Track name (Default: Acceleration): ")
-selected_settings = input("Data name (Default: Svarog data: ")
+selected_settings = input("Data name (Default: Svarog data): ")
 
 if not author:
     author = "User"

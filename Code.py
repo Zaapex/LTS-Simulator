@@ -66,6 +66,9 @@ def lap_time_simulation(track, formula_data, simulations_name):
         # track width added to the radius -> we need the center of the car
         radius = df.loc[x, 'R'] + track_width/2 + 0.1 # get radius at this segment, between two points
 
+        if radius < 4:
+            radius = 4
+
         if radius < 75:
 
             max_vel_rear_inner = max_vel_rear_inner_v2(track_width, a, mass, height_CG, alpha_Cl, wheelbase, CoPy, alpha_Cd, CoPz, coef_friction,
@@ -91,6 +94,9 @@ def lap_time_simulation(track, formula_data, simulations_name):
         radius = df.loc[x, "R"] + track_width/2
         vx_max = df.loc[x, "vx_max"]
         s = df.loc[x, "s"]
+
+        if radius < 4:
+            radius = 4
 
         # normal force on each tire
         f_nor_r_o = normal_force_rear_outer(a, b, m=mass, g=g, h=height_CG, w=w, alfa_cl=alpha_Cl, l=wheelbase, CoPy=CoPy,
@@ -159,6 +165,9 @@ def lap_time_simulation(track, formula_data, simulations_name):
 
         s = df.loc[x, "s"]
 
+        if radius < 4:
+            radius = 4
+
         F_centripental_front = (mass_front * vx_exit ** 2 / radius)
         F_centripental_rear = (mass_rear * vx_exit ** 2 / radius)
         F_drag = alpha_Cd * vx_exit ** 2
@@ -217,7 +226,7 @@ def lap_time_simulation(track, formula_data, simulations_name):
                "Pojemek [m/s²]")
 
     plt.legend()
-    #plt.show()
+    plt.show()
     df.fillna(method="ffill", inplace=True)
 
     for x in range(len(df.index)):
