@@ -6,11 +6,15 @@ https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 
 2.) Install requirements
 
-pip install -r requirements.txt
+<code>pip install -r requirements.txt</code>
 
 https://note.nkmk.me/en/python-pip-install-requirements/
 
-
 3.) Zaženemo program main.py v cmd/terminalu
 
-python main.py
+<code>python main.py</code>
+
+
+<h3>Primer</h3>
+
+![Primer](/home/alex/Desktop/LTS-Simulator/Testiranje/Logatec 26.10.2021/primerjava.png)
