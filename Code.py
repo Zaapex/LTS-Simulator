@@ -217,7 +217,7 @@ def lap_time_simulation(track, formula_data, simulations_name):
                "Pojemek [m/s²]")
 
     plt.legend()
-    plt.show()
+    #plt.show()
     df.fillna(method="ffill", inplace=True)
 
     for x in range(len(df.index)):
@@ -252,49 +252,12 @@ def lap_time_simulation(track, formula_data, simulations_name):
         pot = df.loc[x, "pot"] + df.loc[x + 1, "s"]
         df.at[x + 1, "pot"] = pot
 
-    df.to_csv("Simulations/csv/" + simulations_name)
 
     skidpadtime = skidpad_time(track_width, a, b, mass, height_CG, w, alpha_Cl, wheelbase, CoPy, alpha_Cd, CoPz,
                                coef_friction, KF, KR, v_max_teo)
 
-    print(skidpadtime)
+    # print(skidpadtime)
 
     return df["time"].sum(), total_energy_used_jouls, max_lateral_acc, max_longitudinal_acc, max_veloctiy, \
-           max_deacc, avg_velocity
+           max_deacc, avg_velocity, df
 
-
-author = "alex" #input("Author: ")
-name_of_sim = "Logatec_newnormal"  #input("Name of Simulation: ")
-notes = "no" #input("Notes: ")
-select_track = "Logatec5" #input("Track name: ")
-selected_settings = "Svarog data" #input("Data name: ")
-
-
-df = pd.read_csv(selected_settings)
-
-f = open("Simulations/txt/" + name_of_sim + ".txt", "w+")
-
-f.write("Author: " + str(author) + "\n")
-f.write("Name of Simulation: " + str(name_of_sim) + "\n")
-f.write("Notes: " + str(notes) + "\n")
-f.write("--------------------------------------------------------" + "\n")
-f.write("DATA: " + "\n")
-
-for line in range(len(df.index)):
-    f.write(df["Parameter"][line] + ": " + df["Value"][line] + "\n")
-
-lap_time = lap_time_simulation(select_track, selected_settings, name_of_sim)
-
-f.write("--------------------------------------------------------" + "\n")
-f.write("RESULTS: " + "\n")
-f.write("Total time [s]: " + str(lap_time[0]) + "\n")
-f.write("Total energy used [J]: " + str(lap_time[1]) + "\n")
-f.write("Total energy used [kWh]: " + str(lap_time[1]/(3600*1000)) + "\n")
-f.write("Max lateral acceleration [m/s²]: " + str(lap_time[2]) + "\n")
-f.write("Max longitudinal acceleration [m/s²]: " + str(lap_time[3]) + "\n")
-f.write("Max acceleration [m/s²]: " + str(lap_time[3]) + "\n")
-f.write("Max deceleration [m/s²]: " + str(lap_time[5]) + "\n")
-f.write("Max velocity [m/s]: " + str(lap_time[4]) + "\n")
-f.write("Average velocity [m/s]: " + str(lap_time[6]) + "\n")
-
-f.close()
