@@ -9,3 +9,8 @@ https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 pip install -r requirements.txt
 
 https://note.nkmk.me/en/python-pip-install-requirements/
+
+
+3.) Zaženemo program main.py v cmd/terminalu
+
+python main.py
