@@ -1,5 +1,7 @@
 # LTS-Simulator
 
+0.) Za stabilno verzijo vzemi zadnji release
+
 1.) Ustvari venv na Windows/ Linux 
 
 https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
